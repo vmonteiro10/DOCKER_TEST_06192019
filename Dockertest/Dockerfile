@@ -1,4 +1,4 @@
 FROM php:7.2.19-apache
 COPY Dockertest/src/ /var/www/html/
 EXPOSE 80
-bash ./docker_test.sh
+RUN bash ./docker_test.sh
